@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Questionnaire";
+}
+
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+            <h1>@ViewBag.Title</h1>
+            <img src="../Wallpaper/wall0.jpg" alt="wallpaper" class="rounded-circle" height="50" , width="50" />
+        </div>
+
+        <div class="container">
+            <form action="~/Attr/Questionnaire_Res" method="post">
+                @Html.Label("First Name:")&nbsp;@Html.TextBox("FName", null, new { @class = "form-control" })
+                <br />
+                @Html.Label("Last Name:")&nbsp;@Html.TextBox("LName", null, new { @class = "form-control" })
+                <br />
+                @Html.Label("Gender:")
+                <br />
+                &nbsp;
+                @Html.CheckBox("Male", true) @Html.Label("Male", "Male")
+                &nbsp;@Html.CheckBox("Female", false) @Html.Label("Female", "Female")
+
+
+                <br />
+
+
+                @Html.Label("Education:")&nbsp;
+                @Html.CheckBox("Bachelor", true) @Html.Label("Bachelor", "Bachelor")&nbsp;
+                @Html.CheckBox("Master", false) @Html.Label("Master", "Master")
+
+                <input type="submit" name="Send" value="Send" />
+            </form>
+        </div>
+
+        <div class="div_main">
+        </div>
+
+        <div class="jumbotron text-center">
+
+            <footer>
+                <p>Copyright @DateTime.Now.Year</p>
+
+                <a href="#">
+                    <img src="../Wallpaper/wall0.jpg" alt="wallpaper" height="50" , width="50" />
+                </a>
+            </footer>
+        </div>
+    </body>
+    </html>
+
+

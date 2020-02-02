@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Questionnaire";
+}
+
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+
+        <div class="jumbotron text-center">
+            <h1>@ViewBag.Title</h1>
+            <img src="../Wallpaper/wall0.jpg" alt="wallpaper" class="rounded-circle" height="50" , width="50" />
+        </div>
+
+        <div class="container">
+            <div class="form-group">
+                <label>Your first name:</label>&nbsp;<label>@ViewBag._FName</label><br />
+                <label>Your last name:</label>&nbsp;<label>@ViewBag._LName</label><br />
+
+
+
+                @if (ViewBag._Male == "true")
+                {
+                    <label>Gender: Male</label>
+                }
+                @if (ViewBag._Female == "true")
+                {
+                    <label>Gender: Female</label>
+                }
+                <br />
+
+
+                @if (ViewBag._Bachelor == "true")
+                {
+                    <label>Education: Bachelor</label>
+                }
+                @if (ViewBag._Master == "true")
+                {
+                    <label>Education: Master</label>
+                }
+
+
+
+
+            </div>
+        </div>
+
+        <div class="div_main">
+        </div>
+        <div class="jumbotron text-center">
+
+            <footer>
+                <p>Copyright @DateTime.Now.Year</p>
+
+                <a href="#">
+                    <img src="../Wallpaper/wall0.jpg" alt="wallpaper" height="50" , width="50" />
+                </a>
+            </footer>
+        </div>
+    </body>
+    </html>
+
+
+
+

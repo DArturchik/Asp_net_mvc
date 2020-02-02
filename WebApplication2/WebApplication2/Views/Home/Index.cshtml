@@ -1,0 +1,76 @@
+﻿@{
+
+ }
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task #1</title>
+    
+</head>
+<body>
+    @section Header
+    {
+        <div class="jumbotron text-center">
+            <h1>@ViewBag.Title</h1>
+            <img src="../Wallpaper/wall0.jpg" alt="wallpaper" class="rounded-circle" height="50" , width="50" />
+        </div>
+    }
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="https://theconversation.com/new-zealand-poised-to-introduce-clean-car-standards-and-incentives-to-cut-emissions-120896">New Zealand poised to introduce clean car standards and incentives to cut emissions</a></li>
+                    <li class="list-group-item"><a href="https://www.smithsonianmag.com/science-nature/charging-ahead-with-a-new-electric-car-710956/">Charging Ahead With a New Electric Car</a></li>
+                    <li class="list-group-item"><a href="#">Another</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                
+
+                    <ul class="list-group">
+                        <li class="list-group-item nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Home
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="~/Home/ArticlesPage">Articles</a>
+                                <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Menu</a>
+                                <div class="dropdown-menu">
+                                    <a href="~/Home/ArticlesPage" class="dropdown-item">Home</a>
+                                    <a href="~/Home/Feedback" class="dropdown-item">Feedback</a>
+                                    <a href="~/Home/Questionnaire" class="dropdown-item">Profile</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+                
+                
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="div_main">
+    </div>
+
+    @section Footer
+    {
+        <div class="jumbotron text-center">
+
+            <footer>
+                <p>Copyright @DateTime.Now.Year</p>
+
+                <a href="#">
+                    <img src="../Wallpaper/wall0.jpg" alt="wallpaper" height="50" , width="50" />
+                </a>
+            </footer>
+        </div>
+    }
+</body>
+</html>
